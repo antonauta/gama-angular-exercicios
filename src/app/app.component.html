@@ -1,20 +1,87 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body class="backgroundBeige">
+  <div style="text-align:center">
+    <img width="300"
+      src="https://jobs.gama.academy/assets/novo-logo-horizontal-b27eeb6004e3ed7893043bc7a077c267080ebc34a7054e2550367534ca831a6b.png"
+      alt="Gama academy">
+    <img width="300" src="https://avanade.gama.academy/dist/images/marca-avanade.png" alt="Gama academy">
 
+    <h2 class="text">Primeira atividade - Curso Angular !</h2>
+  </div>
+  <br>
+  <br>
+  <div>
+    <div class="container">
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <h5>DOWN</h5>
+        </div>
+        <div class="col-sm">
+          <H5>COUNT</H5>
+        </div>
+        <div class="col-sm">
+          <h5>UP</h5>
+        </div>
+      </div>
+    </div>
+
+    <!--2 DIV -->
+    <div class="container">
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <img width="50" class="mousePoint" (click)="subCount()"
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNlNzRjM2MiPjxwYXRoIGQ9Ik0xNDMuMjc3MzQsNTEuNTIxNjFjLTEuNTEyMjksMC4wMzU3NSAtMi45NDkxOCwwLjY2NzY2IC0zLjk5NzY1LDEuNzU4MDdsLTUzLjI3OTY5LDUzLjI3OTY5bC01My4yNzk2OSwtNTMuMjc5NjljLTEuMDc5NDIsLTEuMTA5NTkgLTIuNTYxNjMsLTEuNzM1NTkgLTQuMTA5NjMsLTEuNzM1NjhjLTIuMzMzMDMsMC4wMDA2MSAtNC40MzMwNiwxLjQxNDczIC01LjMxMDk2LDMuNTc2MjhjLTAuODc3OSwyLjE2MTU1IC0wLjM1ODYsNC42Mzk1IDEuMzEzMzEsNi4yNjY2OWw1Ny4zMzMzMyw1Ny4zMzMzM2MyLjIzOTA0LDIuMjM4MTEgNS44NjgyNSwyLjIzODExIDguMTA3MjksMGw1Ny4zMzMzMywtNTcuMzMzMzNjMS43MDQxOSwtMS42Mzg3NSAyLjIyNzgxLC00LjE1NTUgMS4zMTg2NSwtNi4zMzc5OGMtMC45MDkxNiwtMi4xODI0OCAtMy4wNjQ2OCwtMy41ODMxNyAtNS40MjgyOSwtMy41MjczOXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+            alt="">
+        </div>
+        <div class="col-sm">
+          <h3>{{ count }}</h3>
+        </div>
+        <div class="col-sm">
+          <img width="50" class="mousePoint" (click)="addCount()"
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNlNzRjM2MiPjxwYXRoIGQ9Ik04NS45MTA0Miw1MS42Yy0xLjQ4OTM3LDAuMDIzNzUgLTIuOTExMDQsMC42MjYxNSAtMy45NjQwNiwxLjY3OTY5bC01Ny4zMzMzMyw1Ny4zMzMzM2MtMS40OTc3NiwxLjQzODAyIC0yLjEwMTEsMy41NzMzOSAtMS41NzczMSw1LjU4MjU4YzAuNTIzNzgsMi4wMDkxOSAyLjA5MjgzLDMuNTc4MjQgNC4xMDIwMiw0LjEwMjAyYzIuMDA5MTksMC41MjM3OCA0LjE0NDU2LC0wLjA3OTU1IDUuNTgyNTgsLTEuNTc3MzJsNTMuMjc5NjksLTUzLjI3OTY5bDUzLjI3OTY5LDUzLjI3OTY5YzEuNDM4MDIsMS40OTc3OCAzLjU3MzQsMi4xMDExMyA1LjU4MjYsMS41NzczNWMyLjAwOTIsLTAuNTIzNzggMy41NzgyNiwtMi4wOTI4NCA0LjEwMjA0LC00LjEwMjA0YzAuNTIzNzgsLTIuMDA5MiAtMC4wNzk1NywtNC4xNDQ1OCAtMS41NzczNSwtNS41ODI2bC01Ny4zMzMzMywtNTcuMzMzMzNjLTEuMDk2OTIsLTEuMDk3NDMgLTIuNTkxNzcsLTEuNzAzNDUgLTQuMTQzMjMsLTEuNjc5Njl6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+            alt="up">
+        </div>
+      </div>
+    </div>
+    <!--2 DIV -->
+
+    <br>
+
+    <div class="container">
+      <br>
+
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <h5>NUMBER RANDOM</h5>
+        </div>
+      </div>
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <h3>{{ numberRandom }}</h3>
+        </div>
+      </div>
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <button class="btn btn-danger" (click)="randomNumber()">RANDOM NUMBER</button>
+        </div>
+      </div>
+      <br>
+      <div class="row" style="text-align:center">
+        <div *ngIf="numberRandom >= count; else higher" class="col-sm">
+          <div class="alert alert-danger" role="alert">
+            {{ count }} This number is less than {{ numberRandom }}
+          </div>
+        </div>
+      </div>
+      <div class="row" style="text-align:center">
+        <div class="col-sm">
+          <ng-template #higher style="text-align:center">
+            <div class="alert alert-success" role="alert">
+              {{ count }} This number is higher than {{ numberRandom }}
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.backgroundBeige {
+    background-color: beige;
+    height: 100vh;
+}
+
+.text {
+    color:  #f35626;
+}
+
+.mousePoint {
+    cursor: pointer;
+}
