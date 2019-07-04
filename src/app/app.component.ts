@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'gama-angular-exercicios';
   count: number = 0;
-  numberRandom: number  = 0;
+  numberRandom: number = 0;
 
   addCount() {
     if (this.count !== 100) {
